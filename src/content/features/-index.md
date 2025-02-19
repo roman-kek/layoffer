@@ -7,10 +7,6 @@ banner:
   title: Connects with all your other tools to create a smooth experience.
   content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta.
   image: "/images/features-banner-img.png"
-  button:
-    label: Download The Theme
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
-    enable: true
 project_management:
   title: Build collaborative workspaces <br /> for your team
   content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. <br /> Mauris pellentesque nec, egestas non nisi. Cras ultricies .
@@ -44,14 +40,6 @@ project_management:
       - Supporting more than 119 country world
       - Open transaction with more than currencies
       - Customer Service with 79 languages
-    buttons:
-      - label: Download The Theme
-        link: "https://themefisher.com/astro-themes/pinwheel-astro"
-        enable: true
-      - label: Learn More
-        link: "#"
-        outline: true
-        enable: true
   feature_tab:
     title: Payment gateway for every stage <br /> of your business growth
     list:

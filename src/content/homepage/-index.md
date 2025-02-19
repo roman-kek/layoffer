@@ -3,10 +3,6 @@ banner:
   title: "Mass Layoffs – Massive Bonuses"
   content: "Are you ready to streamline the layoff process while maintaining <s>compassion</s> profits and professionalism?"
   image: /images/banner-img.png
-  button:
-    enable: true
-    label: Download The Theme
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
 
 ##key features
 key_features:

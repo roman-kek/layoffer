@@ -9,10 +9,6 @@
       "url": "/about"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
-    },
-    {
       "name": "Features",
       "url": "/features"
     },
@@ -29,21 +25,14 @@
           "name": "Careers",
           "url": "/careers"
         },
-
         {
           "name": "Integrations",
           "url": "/integrations"
         },
-
         {
           "name": "Pricing",
           "url": "/pricing"
         },
-        {
-          "name": "Sign In",
-          "url": "/signin"
-        },
-
         {
           "name": "Elements",
           "url": "/elements"
@@ -63,7 +52,6 @@
       "url": "/contact"
     }
   ],
-
   "footer": [
     {
       "name": "About",

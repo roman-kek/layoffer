@@ -151,23 +151,6 @@ const aboutCollection = defineCollection({
   }),
 });
 
-// Blog collection schema
-const blogCollection = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/blog" }),
-  schema: z.object({
-    title: z.string(),
-    page_title: z.string().optional(),
-    subtitle: z.string().optional(),
-    meta_title: z.string().optional(),
-    description: z.string().optional(),
-    date: z.date().optional(),
-    image: z.string().optional(),
-    author: z.string().optional(),
-    categories: z.array(z.string()).default(["others"]),
-    draft: z.boolean().optional(),
-    featured: z.boolean().optional(),
-  }),
-});
 
 // Features collections schema
 const featuresCollection = defineCollection({
@@ -415,7 +398,6 @@ const pagesCollection = defineCollection({
 export const collections = {
   homepage: homepageCollection,
   about: aboutCollection,
-  blog: blogCollection,
   features: featuresCollection,
   "how-it-works": howItWorksCollection,
   contact: contactCollection,

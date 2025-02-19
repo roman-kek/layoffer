@@ -22,3 +22,11 @@ Welcome to **Layoffer**, growing B2B platform designed to help companies **strea
 - Reduce **HR overhead costs** and legal risks.
 - Ensure compliance with **labor laws and corporate governance**.
 - Protect brand reputation while **enhancing shareholder value**.
+
+## 🧑🏻‍💻 How to run
+
+In root folder run
+
+- npm i
+- _pray_
+- npm run dev
