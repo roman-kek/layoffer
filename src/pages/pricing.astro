@@ -1,0 +1,480 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '@/styles/globals.css';
+
+import Footer from '@/components/Footer.astro';
+import Header from '@/components/Header.astro';
+import SideBarLayout from '@/layouts/SideBarLayout';
+---
+
+<Layout title="LayOffer">
+  <SideBarLayout>
+    <Header />
+    <main class="container mx-auto px-4 py-16">
+      <div>
+        {/* Pricing Section: Features Under Purchase Action */}
+        <div class="bg-white dark:bg-gray-900 dark:text-gray-100">
+          <div
+            class="container mx-auto space-y-10 px-4 py-16 lg:space-y-16 lg:px-8 lg:py-32 xl:max-w-7xl"
+          >
+            {/* Heading */}
+            <div class="text-center">
+              <div
+                class="mx-auto mb-2 inline-block rounded-sm bg-blue-100 px-1.5 py-0.5 text-sm font-semibold text-blue-700 dark:bg-blue-900 dark:text-blue-200"
+              >
+                Available licenses
+              </div>
+              <h2 class="mb-4 text-4xl font-black text-black dark:text-white">
+                Choose the best plan
+              </h2>
+              <h3
+                class="mx-auto text-xl leading-relaxed font-medium text-gray-700 lg:w-2/3 dark:text-gray-300"
+              >
+                Get to know our premium solutions and get your start up off the
+                ground in no time. Inspiring results from the first days.
+              </h3>
+            </div>
+            {/* END Heading */}
+
+            {/* Pricing Plans */}
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-4">
+              {/* Basic Plan */}
+              <div class="flex flex-col lg:px-2 lg:pt-12 lg:pb-2">
+                <div
+                  class="flex grow flex-col rounded-xl border border-gray-200 dark:border-gray-700/75"
+                >
+                  <div class="space-y-5 rounded-t-lg p-6 text-center lg:p-8">
+                    <div>
+                      <h4 class="mb-1 text-xl font-bold">Basic</h4>
+                      <p
+                        class="text-sm font-medium text-gray-700 dark:text-gray-400/75"
+                      >
+                        For 100 Projects
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-1 text-3xl font-extrabold lg:text-4xl">
+                        <span
+                          class="align-top text-lg font-medium text-gray-500 dark:text-gray-400"
+                        >
+                          $
+                        </span>
+                        19
+                      </p>
+                      <p
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                      >
+                        one-time payment
+                      </p>
+                    </div>
+                    <a
+                      href="#"
+                      class="group inline-flex w-full items-center justify-center gap-2 rounded-md border border-gray-700 bg-gray-700 p-3 text-sm leading-5 font-semibold text-white transition hover:border-gray-800 hover:bg-gray-800 hover:text-white focus:ring-2 focus:ring-gray-500/50 focus:outline-hidden active:border-gray-700 active:bg-gray-700 sm:px-4"
+                    >
+                      Purchase now
+                    </a>
+                  </div>
+                  <div
+                    class="grow border-t border-gray-100 p-6 lg:space-y-8 lg:p-8 dark:border-gray-700/75"
+                  >
+                    <ul
+                      class="space-y-4 text-sm font-medium text-gray-700 dark:text-gray-300"
+                    >
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>100</strong> Custom Projects
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>50</strong> Paying Clients
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>2</strong> Social Accounts
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>10GB</strong> SSD Storage
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>1TB</strong> Bandwidth
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>24/7</strong> Email Support
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {/* END Basic Plan */}
+
+              {/* Plus Plan */}
+              <div
+                class="flex flex-col overflow-hidden rounded-2xl bg-blue-600 px-2 pb-2"
+              >
+                <div
+                  class="flex h-12 items-center justify-center gap-2 bg-blue-600 text-sm font-semibold text-white"
+                >
+                  <span>Best Choice</span>
+                  <svg
+                    class="hi-mini hi-hand-thumb-up inline-block size-5 opacity-75"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M1 8.25a1.25 1.25 0 112.5 0v7.5a1.25 1.25 0 11-2.5 0v-7.5zM11 3V1.7c0-.268.14-.526.395-.607A2 2 0 0114 3c0 .995-.182 1.948-.514 2.826-.204.54.166 1.174.744 1.174h2.52c1.243 0 2.261 1.01 2.146 2.247a23.864 23.864 0 01-1.341 5.974C17.153 16.323 16.072 17 14.9 17h-3.192a3 3 0 01-1.341-.317l-2.734-1.366A3 3 0 006.292 15H5V8h.963c.685 0 1.258-.483 1.612-1.068a4.011 4.011 0 012.166-1.73c.432-.143.853-.386 1.011-.814.16-.432.248-.9.248-1.388z"
+                    ></path>
+                  </svg>
+                </div>
+                <div
+                  class="group flex grow flex-col rounded-xl bg-white dark:bg-gray-900"
+                >
+                  <div class="space-y-5 rounded-t-lg p-6 text-center lg:p-8">
+                    <div>
+                      <h4 class="mb-1 text-xl font-bold">Plus</h4>
+                      <p
+                        class="text-sm font-medium text-gray-700 dark:text-gray-400/75"
+                      >
+                        For 1,000 projects
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-1 text-3xl font-extrabold lg:text-4xl">
+                        <span
+                          class="align-top text-lg font-medium text-gray-500 dark:text-gray-400"
+                        >
+                          $
+                        </span>
+                        49
+                      </p>
+                      <p
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                      >
+                        one-time payment
+                      </p>
+                    </div>
+                    <a
+                      href="#"
+                      class="group inline-flex w-full items-center justify-center gap-2 rounded-md border border-blue-700 bg-blue-700 p-3 text-sm leading-5 font-semibold text-white transition hover:border-blue-800 hover:bg-blue-800 hover:text-white focus:ring-2 focus:ring-blue-500/50 focus:outline-hidden active:border-blue-700 active:bg-blue-700 sm:px-4"
+                    >
+                      Purchase now
+                    </a>
+                  </div>
+                  <div
+                    class="grow border-t border-gray-100 p-6 lg:space-y-8 lg:p-8 dark:border-gray-700/75"
+                  >
+                    <ul
+                      class="space-y-4 text-sm font-medium text-gray-700 dark:text-gray-300"
+                    >
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>1,000</strong> Custom Projects
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>200</strong> Paying Clients
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>10</strong> Social Accounts
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>100GB</strong> SSD Storage
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>10TB</strong> Bandwidth
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>24/7</strong> Email Support
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {/* END Plus Plan */}
+
+              {/* Team Plan */}
+              <div class="flex flex-col lg:px-2 lg:pt-12 lg:pb-2">
+                <div
+                  class="flex grow flex-col rounded-xl border border-gray-200 dark:border-gray-700/75"
+                >
+                  <div class="space-y-5 rounded-t-lg p-6 text-center lg:p-8">
+                    <div>
+                      <h4 class="mb-1 text-xl font-bold">Team</h4>
+                      <p
+                        class="text-sm font-medium text-gray-700 dark:text-gray-400/75"
+                      >
+                        Unlimited projects by a team
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-1 text-3xl font-extrabold lg:text-4xl">
+                        <span
+                          class="align-top text-lg font-medium text-gray-500 dark:text-gray-400"
+                        >
+                          $
+                        </span>
+                        299+
+                      </p>
+                      <p
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                      >
+                        one-time payment
+                      </p>
+                    </div>
+                    <a
+                      href="#"
+                      class="group inline-flex w-full items-center justify-center gap-2 rounded-md border border-gray-700 bg-gray-700 p-3 text-sm leading-5 font-semibold text-white transition hover:border-gray-800 hover:bg-gray-800 hover:text-white focus:ring-2 focus:ring-gray-500/50 focus:outline-hidden active:border-gray-700 active:bg-gray-700 sm:px-4"
+                    >
+                      Purchase now
+                    </a>
+                  </div>
+                  <div
+                    class="grow border-t border-gray-100 p-6 lg:space-y-8 lg:p-8 dark:border-gray-700/75"
+                  >
+                    <ul
+                      class="space-y-4 text-sm font-medium text-gray-700 dark:text-gray-300"
+                    >
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>Unlimited</strong> Custom Projects
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>Unlimited</strong> Paying Clients
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>Unlimited</strong> Social Accounts
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>Unlimited</strong> SSD Storage
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>Unlimited</strong> Bandwidth
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="hi-solid hi-check inline-block size-6 text-blue-600 dark:text-blue-400"
+                        >
+                          <path
+                            d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                          ></path>
+                        </svg>
+                        <span>
+                          <strong>24/7</strong> Priority Email Support
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {/* END Team Plan */}
+            </div>
+            {/* END Pricing Plans */}
+          </div>
+        </div>
+        {/* END Pricing Section: Features Under Purchase Action */}
+      </div>
+      <Footer />
+    </main>
+  </SideBarLayout>
+</Layout>
