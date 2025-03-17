@@ -1,24 +1,144 @@
 ---
-import Base from "@/layouts/Base.astro";
-import Banner from "@/layouts/components/Banner.astro";
-import KeyFeatures from "@/layouts/components/KeyFeatures.astro";
-import Service from "@/layouts/components/Service.astro";
-import Testimonial from "@/layouts/components/Testimonial.astro";
-import Cta from "@/layouts/partials/Cta.astro";
-import type { CollectionEntry } from "astro:content";
-import { getEntry } from "astro:content";
+import Layout from '../layouts/Layout.astro';
+import '@/styles/globals.css';
 
-const homepage = (await getEntry(
-  "homepage",
-  "-index"
-)) as CollectionEntry<"homepage">;
-const { banner, key_features, service, testimonial } = homepage.data;
+import {
+  Scroll,
+  Scissors,
+  Scale,
+  ArrowUpCircle,
+  Target,
+  Heart,
+} from 'lucide-react';
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from '@/components/ui/card';
+import { AvatarComponent } from '../components/Avatar';
+import Footer from '@/components/Footer.astro';
+import Header from '@/components/Header.astro';
 ---
 
-<Base>
-  <Banner banner={banner} />
-  <KeyFeatures key_features={key_features} />
-  <Service service={service} />
-  <Testimonial testimonial={testimonial} />
-  <Cta />
-</Base>
+<Layout title="LayOffer">
+  <Header />
+  <main class="container mx-auto px-4 py-16">
+    <div class="bg-blue-200 py-10 h-[450px] rounded-lg">
+      <span class="text-3xl block mt-2 font-normal text-center py-10">
+        Mass Layoffs – Massive Bonuses
+      </span>
+
+      <img
+        class="mb-4 border-8 border-white rounded-lg w-3/4 mx-auto top-3"
+        src="/main_image.png"
+        alt="Your Image Description"
+      />
+    </div>
+    <div class="flex py-52">
+      <div>
+        <div class="grid grid-cols-3 gap-2 mb-4">
+          <Card>
+            <CardHeader>
+              <Scissors />
+              <CardTitle>Strategic Downsizing</CardTitle>
+              <CardDescription
+                >Remove excess workforce to enhance operational efficiency and
+                cost savings.</CardDescription
+              >
+            </CardHeader>
+          </Card>
+          <Card>
+            <CardHeader>
+              <Scroll />
+              <CardTitle>Severance Structuring</CardTitle>
+              <CardDescription
+                >Provide baseline severance packages to mitigate legal risks
+                while minimizing expenses.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+          <Card>
+            <CardHeader>
+              <Scale />
+              <CardTitle>Compliance Management</CardTitle>
+              <CardDescription
+                >Ensure layoffs adhere to legal frameworks to avoid litigation
+                and reputational damage.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+        <div class="grid grid-cols-3 gap-2 mb-4">
+          <Card>
+            <CardHeader>
+              <ArrowUpCircle />
+              <CardTitle>Resource Reallocation</CardTitle>
+              <CardDescription
+                >Redirect financial and human capital toward higher-value areas
+                for increased profitability.</CardDescription
+              >
+            </CardHeader>
+          </Card>
+          <Card>
+            <CardHeader>
+              <Target />
+              <CardTitle>Performance-Based Retention</CardTitle>
+              <CardDescription
+                >Retain only high-impact employees to maximize productivity
+                post-layoff.</CardDescription
+              >
+            </CardHeader>
+          </Card>
+          <Card>
+            <CardHeader>
+              <Heart />
+              <CardTitle> Morale Stabilization </CardTitle>
+              <CardDescription
+                >Personalized internal messaging to control narrative and reduce
+                backlash among remaining employees.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-6">
+      <Card className="shadow-md hover:shadow-xl transition-shadow">
+        <CardHeader>
+          <CardTitle>
+            <AvatarComponent
+              client:load
+              src="https://github.com/withastro.png"
+              alt="Astro"
+              fallbackText="Astro"
+            />
+            Astro
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          Build faster websites with less client-side JavaScript.
+        </CardContent>
+      </Card>
+      <Card className="shadow-md hover:shadow-xl transition-shadow">
+        <CardHeader>
+          <CardTitle>
+            <AvatarComponent
+              client:load
+              src="https://github.com/shadcn.png"
+              alt="Shadcn"
+              fallbackText="Shadcn"
+            />
+            Shadcn UI
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          Beautifully designed components built with Radix UI and Tailwind CSS.
+        </CardContent>
+      </Card>
+    </div>
+  </main>
+  <Footer />
+</Layout>
