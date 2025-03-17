@@ -1,4 +1,11 @@
-import { Home, DollarSign, Search, Settings, Gamepad } from "lucide-react";
+import {
+  Home,
+  DollarSign,
+  Search,
+  Settings,
+  Gamepad,
+  Contact,
+} from "lucide-react";
 
 import {
   Sidebar,
@@ -27,16 +34,6 @@ const items = [
     title: "Game",
     url: "/game",
     icon: Gamepad,
-  },
-  {
-    title: "Search",
-    url: "#",
-    icon: Search,
-  },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
   },
 ];
 
